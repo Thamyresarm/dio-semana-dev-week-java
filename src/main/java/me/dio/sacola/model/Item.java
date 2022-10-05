@@ -19,7 +19,7 @@ public class Item {
     @OneToOne
     private Produto produto;
     private int quantidade;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JsonIgnore
     private Sacola sacola;
     

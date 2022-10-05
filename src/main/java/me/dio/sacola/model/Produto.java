@@ -20,7 +20,6 @@ public class Produto {
     private double valorUnitario;
     @Builder.Default
     private Boolean disponivel = true;
-    private int quantidade;
     @ManyToOne
     @JsonIgnore
     private Restaurante restaurante;

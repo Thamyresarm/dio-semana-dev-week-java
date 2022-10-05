@@ -15,7 +15,7 @@ public class Restaurante {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String cliente;
+    private String nome;
     @OneToMany(cascade = CascadeType.ALL)
     private List<Produto> produtos;
     @Embedded
